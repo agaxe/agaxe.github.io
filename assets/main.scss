@@ -3,3 +3,12 @@
 ---
 
 @import "styles";
+
+.post-preview{
+    padding:1rem 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    &:last-of-type{
+        border-bottom:0;
+    }
+}
