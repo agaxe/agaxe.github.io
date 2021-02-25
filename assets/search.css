@@ -11,3 +11,6 @@
   line-height: 44px;
   outline: none;
 }
+#results-container{
+  padding:0;
+}
