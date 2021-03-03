@@ -4,9 +4,42 @@
 
 @import "styles";
 
+// * common
 body{
     font-family: 'Nanum Gothic', sans-serif !important;
 }
+
+.category-list{
+    display:flex;
+    align-items:center;
+    font-size:1rem;
+    & > span{
+        display:inline-flex;
+        align-items:center;
+        line-height:initial;
+        margin-right:0.7rem;
+        padding-top:5.5px;
+        user-select: none;
+    }
+    & > a{
+        margin-right:0.5rem;
+        font-weight: 300;
+        font-family: 'Noto Sans KR', sans-serif;
+        &:last-of-type{
+            margin-right:0;
+        }
+    }
+}
+
+.post-preview{
+    padding:1rem 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    &:last-of-type{
+        border-bottom:0;
+    }
+}
+
 
 // * post page
 .post-container{
@@ -73,14 +106,5 @@ header.masthead {
         a{
             color:#fff;
         }
-    }
-}
-
-.post-preview{
-    padding:1rem 0;
-    border: 0;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    &:last-of-type{
-        border-bottom:0;
     }
 }
