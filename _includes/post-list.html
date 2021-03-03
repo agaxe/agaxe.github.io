@@ -8,6 +8,9 @@
         {% endif %}
     </a>
     {% if post.categories.size > 0 %}
+    <p class="post-meta">
+        {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+    </p>
     <span class="category-list">
         <span>🏷</span>
         {% for category in post.categories %}
@@ -15,7 +18,4 @@
         {% endfor %}
     </span>
     {% endif %}
-    <p class="post-meta">
-        {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-    </p>
 </article>
