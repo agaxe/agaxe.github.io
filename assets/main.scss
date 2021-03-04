@@ -4,9 +4,22 @@
 
 @import "styles";
 
+// * mixin
+@mixin primary-font {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin secondary-font {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 // * common
 body{
-    font-family: 'Nanum Gothic', sans-serif !important;
+    @include primary-font;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:700;
+    @include primary-font;
 }
 
 .category-list{
@@ -23,8 +36,9 @@ body{
     }
     & > a{
         margin-right:0.5rem;
-        font-weight: 300;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        @include primary-font;
         &:last-of-type{
             margin-right:0;
         }
@@ -47,9 +61,9 @@ body{
 
 // * post page
 .post-container{
-    h1,h2,h3,h4,h5,h6{
-        font-weight:700;
-    }
+
+    @include secondary-font;
+
     h1, h2{
         padding:3rem 0px 1rem 0;
     }
