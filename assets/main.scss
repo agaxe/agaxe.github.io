@@ -58,6 +58,27 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
+header.masthead{
+    .post-heading{
+        .subheading{
+            font-weight:400;
+            margin: 10px 0 0 0;
+            
+        }
+        .meta{
+            @include primary-font;
+            font-style: normal;
+            margin: 25px 0 10px;
+        }
+        .sp-bar{
+            display:inline-block;
+            width:1px;
+            height:10px;
+            background:#aaa;
+            margin:0 0.2rem;
+        }
+    }
+}
 
 // * post page
 .post-container{
