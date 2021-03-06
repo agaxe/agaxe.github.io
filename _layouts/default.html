@@ -5,13 +5,14 @@
 {% include head.html %}
 
 <body>
-
+  
+<div id="{{page.type}}_wrap">
   {% include navbar.html %}
-
+  
   {{ content }}
-
-  {% include footer.html %}
-
+ 
+ {% include footer.html %}
+</div>
   {% include scripts.html %}
 
   {% include google-analytics.html %}
