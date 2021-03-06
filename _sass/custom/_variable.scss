@@ -1,0 +1,13 @@
+// * mixin
+@mixin primary-font {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin secondary-font {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+@mixin gradientBg($first, $second, $direction){
+    background: $second !important; 
+    background: -webkit-linear-gradient(to $direction, $first, $second) !important; 
+    background: linear-gradient(to $direction, $first, $second) !important;
+}

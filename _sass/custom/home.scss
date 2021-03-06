@@ -1,0 +1,7 @@
+// * main page
+#home_wrap{
+    .masthead{
+        @include gradientBg( #de6161, #2657eb, right)
+    }
+    
+}
