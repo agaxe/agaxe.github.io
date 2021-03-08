@@ -25,11 +25,15 @@ type: search
         resultsContainer: document.getElementById('results-container'),
         json: '/search.json',
         searchResultTemplate: `
-            <article class="post-preview">
-                <a href="{url}" title="{desc}" target="_blank">
+           <article class="post-preview">
+                <a href="{url}" target="_blank">
                     <h2 class="post-title">{title}</h2>
-                    <p class="post-meta">{date}</p>
                 </a>
+                <p class="post-meta">{date}</p>
+                <span class="category-list">
+                    <span>🏷</span>
+                    <a>{category}</a>
+                </span>
             </article>    
         `,
         noResultsText: 'No results found',
