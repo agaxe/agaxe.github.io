@@ -56,3 +56,22 @@ header.masthead{
         }
     }
 }
+
+// * media query
+@media only screen and (max-width: 768px){
+      header.masthead{
+        margin-bottom:0.667rem;
+    }
+
+    .post-preview > a > .post-title {
+        font-size:1.5rem;
+    }
+
+    .post-preview > .post-meta{
+       font-size: 0.889rem;
+    }
+
+    .category-list{
+        font-size: 0.889rem;
+    }
+}
