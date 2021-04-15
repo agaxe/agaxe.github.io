@@ -78,7 +78,7 @@ age = 30; // Uncaught SyntaxError: Identifier 'age' has already been declared
 
 -   `var` 는 <mark>함수 레벨 스코프 (function-level scope)</mark> 를 따른다.
 -   `const` 와 `let` 은 <mark>블록 레벨 스코프 (block-level scope)</mark> 를 따른다.
--   스코프에 관련된 정보는 [해당 포스팅](/javascript/2021/03/16/javascript-scope.html)에서 확인할 수 있다.
+-   스코프에 관련된 정보는 [해당 포스팅](/javascript/2021/04/15/javascript-scope.html)에서 확인할 수 있다. 
 
 ## 3. 호이스팅
 
