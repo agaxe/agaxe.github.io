@@ -1,5 +1,5 @@
 ---
 layout: category
-title: CSS
+title: css
 bgColor : "#2160af"
 ---
