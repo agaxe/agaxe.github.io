@@ -2,7 +2,6 @@
 layout: post
 title:  "[Javascript] defer 와 async"
 categories: ['Javascript']
-bgColor : '#F7DF1E'
 ---
 
 브라우저는 HTML을 파싱하는 중 스크립트 태그 `<script>...</script>` 를 만나면 HTML 파싱을 중단하고 스크립트 다운과 실행을 한 뒤에 다시 HTML 파싱을 재개하는데

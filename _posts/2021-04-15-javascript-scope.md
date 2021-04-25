@@ -2,7 +2,6 @@
 layout: post
 title:  "[Javascript] 스코프 (Scope)"
 categories: ['Javascript']
-bgColor : '#F7DF1E'
 ---
 
 # 스코프의 정의

@@ -2,7 +2,6 @@
 layout: post
 title: '[JavaScript] var, let, const 차이점'
 categories: ['Javascript']
-bgColor: '#F7DF1E'
 ---
 
 자바스크립트에는 `var`, `let`, `const` 3가지의 변수 선언 방식이 있다.

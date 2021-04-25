@@ -2,7 +2,6 @@
 layout: post
 title:  "[Javascript] 클로저 (Closure)"
 categories: ['Javascript']
-bgColor : '#F7DF1E'
 ---
 
 # 클로저의 정의
