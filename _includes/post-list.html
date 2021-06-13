@@ -12,7 +12,10 @@
         {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
     </p>
     <span class="category-list">
-        <span>🏷</span>
+        <!-- <span>🏷</span> -->
+        <span>
+            <img src="/img/common/label.png" alt="label-icon" class="label-icon">
+        </span>
         {% for category in post.categories %}
         <a href="/category/{{category}}">{{ category }}</a>
         {% endfor %}
