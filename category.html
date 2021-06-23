@@ -7,7 +7,7 @@ type : category
 {% for category in site.categories %}
 <article class="post-preview">
     <h2 class="post-title">
-        <a href="{{ category[0] }}"><strong>{{category|first}}</strong></a>
+        <a href="/category/{{ category[0] }}"><strong>{{category|first}}</strong></a>
     </h2>
 </article>
 {% endfor %}
