@@ -1,108 +1,114 @@
-.category-list{
-    display:flex;
-    align-items:center;
-    font-size:1rem;
-    & > span{
-        display:inline-flex;
-        align-items:center;
-        line-height:initial;
-        margin-right:0.7rem;
-        padding-top:5.5px;
-        user-select: none;
+.category-list {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  & > span {
+    display: inline-flex;
+    align-items: center;
+    line-height: initial;
+    margin-right: 0.7rem;
+    padding-top: 5.5px;
+    user-select: none;
+  }
+  & > a {
+    margin-right: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    @include primary-font;
+    &:last-of-type {
+      margin-right: 0;
     }
-    & > a{
-        margin-right:0.5rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        @include primary-font;
-        &:last-of-type{
-            margin-right:0;
-        }
-    }
+  }
 }
-.clearfix{
-    margin-top:2rem;
+.clearfix {
+  margin-top: 2rem;
 }
-.post-preview{
-    padding:1rem 0;
-    border: 0;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    &:last-of-type{
-        border-bottom:0;
-    }
-    .post-meta{
-        font-style: normal; 
-        margin-bottom:15px;
-    }
-}
-
-header.masthead{
-    .post-heading{
-        .subheading{
-            font-weight:400;
-            margin: 10px 0 0 0;
-        }
-        .meta{
-            @include primary-font;
-            font-style: normal;
-            margin: 25px 0 10px;
-        }
-        .sp-bar{
-            display:inline-block;
-            width:1px;
-            height:10px;
-            background:#aaa;
-            margin:0 0.2rem;
-        }
-    }
-    &.css{
-        background:#2160af;
-    }
-    &.Javascript{
-        background:#F7DF1E;
-    }
-    &.Web{
-        background:#1ca261;
-    }
-    &.Algorithm{
-        background:#fa5252;
-    }
-    &.React{
-        background:#61DAFB;
-    }
-    &.Redux{
-        background:#764ABC;
-    }
-    &.Server{
-        background:#333;
-    }
-    &.etc{
-        background:#E4DFDA;
-    }
-    &.Debugging{
-        background:#F18805;
-    }
+.post-preview {
+  padding: 1rem 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  .post-meta {
+    font-style: normal;
+    margin-bottom: 15px;
+  }
+  .category-length {
+    font-size: 0.55em;
+    color: #ccc;
+    font-weight: 500;
+    margin-left: 8px;
+  }
 }
 
-.label-icon{
-    width:20px;
+header.masthead {
+  .post-heading {
+    .subheading {
+      font-weight: 400;
+      margin: 10px 0 0 0;
+    }
+    .meta {
+      @include primary-font;
+      font-style: normal;
+      margin: 25px 0 10px;
+    }
+    .sp-bar {
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      background: #aaa;
+      margin: 0 0.2rem;
+    }
+  }
+  &.css {
+    background: #2160af;
+  }
+  &.Javascript {
+    background: #f7df1e;
+  }
+  &.Web {
+    background: #1ca261;
+  }
+  &.Algorithm {
+    background: #fa5252;
+  }
+  &.React {
+    background: #61dafb;
+  }
+  &.Redux {
+    background: #764abc;
+  }
+  &.Server {
+    background: #333;
+  }
+  &.etc {
+    background: #e4dfda;
+  }
+  &.Debugging {
+    background: #f18805;
+  }
+}
+
+.label-icon {
+  width: 20px;
 }
 
 // * media query
-@media only screen and (max-width: 768px){
-      header.masthead{
-        margin-bottom:0.667rem;
-    }
+@media only screen and (max-width: 768px) {
+  header.masthead {
+    margin-bottom: 0.667rem;
+  }
 
-    .post-preview > a > .post-title {
-        font-size:1.5rem;
-    }
+  .post-preview > a > .post-title {
+    font-size: 1.5rem;
+  }
 
-    .post-preview > .post-meta{
-       font-size: 0.889rem;
-    }
+  .post-preview > .post-meta {
+    font-size: 0.889rem;
+  }
 
-    .category-list{
-        font-size: 0.889rem;
-    }
+  .category-list {
+    font-size: 0.889rem;
+  }
 }
