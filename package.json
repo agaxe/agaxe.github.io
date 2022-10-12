@@ -26,7 +26,7 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll.git"
     },
     "scripts": {
-        "jekyll": "jekyll serve --host 0.0.0.0 --draft"
+        "jekyll": "bundle exec jekyll serve --host 0.0.0.0 --draft"
     },
     "dependencies": {
         "bootstrap": "4.5.0",
