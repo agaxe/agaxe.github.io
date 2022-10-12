@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Category
-type : category
+type: category
 ---
 
 {% for category in site.categories %}
 <article class="post-preview">
-    <h2 class="post-title">
-        <a href="/category/{{ category[0] }}"><strong>{{category|first}}</strong><span class="category-length">({{category[1].size}})</span></a>
-    </h2>
+  <h2 class="post-title">
+    <a href="/category/{{ category[0] }}"><strong>{{category|first}}</strong></a
+    ><span class="category-length">({{category[1].size}})</span>
+  </h2>
 </article>
 {% endfor %}
