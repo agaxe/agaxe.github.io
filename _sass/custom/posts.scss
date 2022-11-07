@@ -1,91 +1,96 @@
 // * posts page
-#post_wrap{
-    .masthead{
-        @include gradientBg( #FF8235, #30E8BF, right)
-    }
+#post_wrap {
+  .masthead {
+    @include gradientBg(#ff8235, #30e8bf, right);
+  }
 }
 
- .post-container{
+.post-container {
+  @include secondary-font;
+  $colorGray: #ccc;
 
-    @include secondary-font;
-    $colorGray : #ccc;
+  h1,
+  h2 {
+    //padding:3rem 0px 1rem 0;
+    padding: 0.5rem 0px;
+  }
+  h3,
+  h4 {
+    padding: 2rem 0 0 0;
+  }
 
-    h1, h2{
-        padding:3rem 0px 1rem 0;
-    }
-    h3,h4{
-        padding:2rem 0 0 0;
-    }
+  dl,
+  ol,
+  ul {
+    line-height: 2;
+  }
 
-    dl, ol, ul{
-        line-height:2;
-    }
+  a {
+    text-decoration: underline;
+  }
 
-    a{
-        text-decoration: underline;
+  p {
+    line-height: 1.7;
+    & > img {
+      width: 100%;
     }
-    
-    p{
-        line-height: 1.7;
-        & > img{
-            width:100%;
-        }
-    }
+  }
 
-    small{
-        display:inline-block;
-        width:100%;
-        text-align:center;
-    }
+  small {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 
-    .clearfix{
-        border-top:1px solid rgba(0,0,0,.1);
-        padding-top:1rem;
-        margin-top:4rem;
-    }
+  .clearfix {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    margin-top: 4rem;
+  }
 
-    .lineno{
-        color: $colorGray;
-        border-right:1px solid  $colorGray;
-        padding-right:1rem;
-        margin-right:0.5rem;
-    }
+  .lineno {
+    color: $colorGray;
+    border-right: 1px solid $colorGray;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+  }
 
-    code.language-plaintext {
-        background: #eee;
-        padding: 0.3rem;
-        border-radius:0.2rem;
-    }
+  code.language-plaintext {
+    background: #eee;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+  }
 
-    div.highlight{
-        margin-bottom:1.5rem;
-    }
+  div.highlight {
+    margin-bottom: 1.5rem;
+  }
 
-    pre.highlight{
-        margin-bottom:0;
-    }
+  pre.highlight {
+    margin-bottom: 0;
+  }
 
-    small{
-        color:#999;
-    }
+  small {
+    color: #999;
+  }
 
-    table:not(.rouge-table){
-        border:1px solid $colorGray;
-        th, td {
-            border: 1px solid $colorGray;
-            padding:15px;
-        }
+  table:not(.rouge-table) {
+    border: 1px solid $colorGray;
+    th,
+    td {
+      border: 1px solid $colorGray;
+      padding: 15px;
     }
+  }
 }
 
 header.masthead {
-    .overlay{
-        opacity: 0.2;
-    }
+  .overlay {
+    opacity: 0.2;
+  }
 
-    .category-list{
-        a{
-            color:#fff;
-        }
+  .category-list {
+    a {
+      color: #fff;
     }
+  }
 }
