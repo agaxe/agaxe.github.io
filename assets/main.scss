@@ -2,15 +2,16 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "styles";
+@import 'styles';
 
 // * import
 @import 'custom/_variable';
-@import 'custom/_global'; 
-@import 'custom/common'; 
-@import 'custom/home'; 
-@import 'custom/about'; 
+@import 'custom/_global';
+@import 'custom/common';
+@import 'custom/home';
+@import 'custom/about';
 @import 'custom/posts';
-@import 'custom/search'; 
-@import 'custom/contact'; 
-@import 'custom/category'; 
+@import 'custom/search';
+@import 'custom/contact';
+@import 'custom/category';
+@import 'custom/footer';
